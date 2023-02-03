@@ -29,7 +29,7 @@ export LOCALVERSION="ddqdqdq-dev"
 make O=$OUT $DEFCONFIG
 
 PATH="/home/linlinger/android/toolchains/clang-10.0/bin:$PATH" \
-make -j4 O=$OUT \
+make -j$(nproc --all) O=$OUT \
 CC=clang \
 CLANG_TRIPLE=aarch64-linux-gnu- \
 CROSS_COMPILE=/home/linlinger/android/toolchains/aarch64-4.9/bin/aarch64-linux-android- \
