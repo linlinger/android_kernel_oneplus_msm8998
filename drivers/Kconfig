@@ -220,4 +220,6 @@ source "drivers/param_read_write/Kconfig"
 
 source "drivers/oneplus/Kconfig"
 
+source "drivers/kernelsu/Kconfig"
+
 endmenu
